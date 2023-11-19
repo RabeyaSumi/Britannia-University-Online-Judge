@@ -1,0 +1,14 @@
+            .form-horizontal{
+                margin:0 auto;
+                width:70%;
+                background-color: rgba(155, 205, 252, 0.9);
+                padding: 100px 100px 100px 100px;
+                border: 1px solid white;
+                box-shadow:
+                inset 0 -3em 3em rgba(105, 180, 250, 0.8),
+                0 0 0 0px pink,
+                0em 0em 1em gray;
+                border-radius: 5px;
+                padding-right:0px;
+            }
+        

@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+.main-content{
+    height: 800px;
+    width: 100%;
+}
+
+
+.test-color{
+    color: rgb(27, 51, 71);
+}
+
+.logo{
+    height:100px; 
+    weight:110px;
+}
+.brand{ 
+    margin:0;
+    color: #54B0D3;
+    font-family:'Comic Sans MS'
+}
+
+.footer {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #395869;
+ 
+}
+
+.sp{
+    margin-right: 50px;
+}
+
+/*--------Header--------*/
+.menurow {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #395869;
+    padding-top: 10px;
+    border-bottom: 1px solid pink;
+ }
+
+  ul {
+    padding:16px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
+
+  li {
+    color:red;
+    float: left;
+    font-family: verdana, arial, sans-serif;
+    font-size: 17px;
+  }
+
+  li a {
+    color: rgb(133, 2, 87);
+    display:block
+    text-align: center;
+    padding: 14px 16px;
+    padding-bottom: 1px;
+    text-decoration: bold;
+  }
+
+
+  li a:active {
+    color: orange;
+    text-decoration: underline;
+  }
+
+
+
+  /*--------Signin   Signup---------*/
+  .form {
+    border-radius: 5px;
+    padding: 100px;
+   }
+    input{
+        background-color:#bfbfbf;
+    }
+
+    input[type=email] {
+                        
+        width: 70%;
+        padding: 8px 20px;
+        margin: 2px 0;
+        box-sizing: border-box;
+        
+    }
+    input[type=text] {
+        width: 70%;
+        padding: 8px 20px;
+        margin: 2px 0;
+        box-sizing: border-box;
+    }
+    input[type=password] {
+        width: 70%;
+        padding: 8px 20px;
+        margin: 2px 0;
+        box-sizing: border-box;
+    
+    } 
+    button[type=submit] {
+        color: white;
+        background-color:#1b6917;
+        font-weight: bold;
+        width: 12%;
+        padding: 12px 10px;
+        margin: 50px 0;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+    button[type=submit]:hover, active{
+        background-color:#0f4218;
+        
+    }
+    lebel{
+        font-weight: bold;
+    }
+
+
+
