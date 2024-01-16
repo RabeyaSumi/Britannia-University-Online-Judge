@@ -52,7 +52,7 @@ include("header.php");
 <div class="main-content">
 <div class="row log">
 <div class="col-sm-10">
-<div class="lead"><h3 style="text-align:center;margin-top:50px; color:#A71F8B">Problem Archive</h3></div>
+<div class="lead"><h2 style="text-align:center; PADDING-LEFT: 150PX; FONT-WEIGHT: BOLD; margin-top:50px;" >PROBLEM ARCHIVE</h2></div>
 </div>
 
 <div class="col-sm-1">
@@ -68,7 +68,7 @@ include("header.php");
 <div class="row">
 <div class="col-sm-2">
 </div>
-<div class="col-sm-8 pbs" style="background-color:pink">
+<div class="col-sm-8 pbs" style="background-color:white">
   <div class="table-responsive">
     <table class="table">
     <thead>

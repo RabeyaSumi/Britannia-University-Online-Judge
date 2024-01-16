@@ -46,7 +46,7 @@ require_once("header.php");
 
 <div class="row log">
 <div class="col-sm-10">
-<br><br><br><div class="lead"><h3 style="text-align:center; color:#A71F8B">All Contest</h3></div>
+<br><div class="lead"><h2 style="text-align:center; padding-left:200px; font-weight:bold">ALL CONTEST</h2></div>
 </div>
 
 
@@ -169,15 +169,15 @@ while($row=mysqli_fetch_array($sq3))
       /*echo(" <a href=\"save.php?name=$row[table_name]\">$row[table_name]</a><br><br>");*/
         if($row['date_on']==$d && $seconds>=0 && $ss>=0 )
         {
-             echo("<div style=\"background-color:white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; class=\"xm\">Lab Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab ID: $row[id]<br><br>Lab Date: $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br> Status: <b>Running</b> <br><br>Time Remaining:  $h hour $mt miniute $scnd second <br><br></div>");
+             echo("<div style=\"background-color: white; box-shadow: 2px 2px 2px 2px lightblue; margin-bottom:10px; padding:10px;border-radius:5px; class=\"xm\">Contest: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Contest ID: $row[id]<br><br>Date: $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br> Status: <b>Running</b> <br><br>Time Remaining:  $h hour $mt miniute $scnd second <br><br></div>");
          }
          else if($d>$row['date_on'] || ($d==$row['date_on'] && $t>$en))
          {
-            echo("<div style=\"background-color: white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; class=\"xm\">Lab Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab ID: $row[id]<br><br>Lab Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status:<b>Finished</b><br><br></div><br>");
+            echo("<div style=\"background-color: white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; class=\"xm\">Contest: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Contest ID: $row[id]<br><br>Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status:<b>Finished</b><br><br></div><br>");
          }
          else
          {
-            echo("<div style=\"background-color:white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; class=\"xm\">Lab Name: $row[cname]<br><br>Lab ID: $row[id]<br><br>Lab Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status:<b>Not Started Yet</b><br><br></div>");
+            echo("<div style=\"background-color: white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; class=\"xm\">Contest: $row[cname]<br><br>Contest ID: $row[id]<br><br>Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status:<b>Not Started Yet</b><br><br></div>");
          }
     }
 }
@@ -272,15 +272,15 @@ if(!isset($_POST['cn']))
       /*echo(" <a href=\"save.php?name=$row[table_name]\">$row[table_name]</a><br><br>");*/
         if($row['date_on']==$d && $seconds>=0 && $ss>=0 )
         {
-             echo("<div style=\"background-color:white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; class=\"xm\">Lab Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab ID: $row[id]<br><br>Lab Date: $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br> Status: <b>Running</b> <br><br>Time Remaining:  $h hour $mt miniute $scnd second <br><br></div>");
+             echo("<div style=\"background-color: white; box-shadow: 2px 2px 2px 2px lightblue; margin-bottom:20px; padding:10px;border-radius:5px; class=\"xm\">Contest: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Contest ID: $row[id]<br><br>Date: $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br> Status: <b>Running</b> <br><br>Time Remaining:  $h hour $mt miniute $scnd second <br><br></div>");
          }
          else if($d>$row['date_on'] || ($d==$row['date_on'] && $t>$en))
          {
-            echo("<div style=\" box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; class=\"xm\">Lab Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab ID: $row[id]<br><br>Lab Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status:<b>Finished</b><br><br></div><br>");
+            echo("<div style=\"background-color: white; box-shadow: 2px 2px 2px 2px lightblue;  padding:10px;border-radius:5px; class=\"xm\">Contest: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Contest ID: $row[id]<br><br>Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status:<b>Finished</b><br><br></div><br>");
          }
          else
          {
-            echo("<div style=\"background-color:white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; class=\"xm\">Lab Name: $row[cname]<br><br>Lab ID: $row[id]<br><br>Lab Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status:<b>Not Started Yet</b><br><br></div>");
+            echo("<div style=\"background-color: white; box-shadow: 2px 2px 2px 2px lightblue;  padding:10px;border-radius:5px; class=\"xm\">Contest: $row[cname]<br><br>Contest ID: $row[id]<br><br>Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status:<b>Not Started Yet</b><br><br></div>");
          }
     }
 

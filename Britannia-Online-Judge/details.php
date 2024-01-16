@@ -45,7 +45,7 @@ require_once("header.php");
 <div class="main-content" style="height:950px; padding-left:80px">
 <div class="row log">
 <div class="col-sm-10">
-<br><br><div class="lead"><h3 style="text-align:center; color:#A71F8B">Problem Details</h3></div>
+<br><br><div class="lead"><h3 style="text-align:center; font-weight:bold">PROBLEM DETAILS</h3></div>
 </div>
 
 </div>
@@ -258,11 +258,11 @@ echo("Problem Name: $r1[pbname]<br><br> Problem ID: $r1[pbid]<br><br> Problem De
       /*echo(" <a href=\"save.php?name=$row[table_name]\">$row[table_name]</a><br><br>");*/
         if($row['date_on']==$d && $seconds>=0 && $ss>=0 )
         {
-             echo "<a class=\"btn btn-success\" href=\"contestsubmit.php?id=$r1[pbid]\">Submit Your Code</a>";
+             echo "<a class=\"btn btn-success;\" href=\"contestsubmit.php?id=$r1[pbid]\">Submit Your Code</a>";
          }
          else if($d>$row['date_on'] || ($d==$row['date_on'] && $t>$en))
          {
-            echo "Contest Has Finished<br><br>";
+            echo "<div style=\"color: blue\">Contest Has Finished</div><br><br>";
          }
          else
          {

@@ -31,12 +31,48 @@ if(isset($_SESSION['un']))
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
         <style>
               .main-content{
                   height: 100%;
                   width: 100%;
               }
+              .accordion {
+              background-color: #eee;
+              color: green;
+              cursor: pointer;
+              font-weight: bold;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+
+            
+
+            .accordion:after {
+              content: '\002B';
+              color: #777;
+              font-weight: bold;
+              float: right;
+              margin-left: 5px;
+            }
+
+            .active:after {
+              content: "\2212";
+            }
+
+            .panel {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            }
         </style>
 
         
@@ -56,13 +92,27 @@ if(isset($_SESSION['un']))
 require_once("header.php");
 
 ?>
-<div class="main-content">
+<button class="accordion">Click to see how to use compiler.</button>
+<div class="panel" style="padding-left:100px; background-color:lavender">
+<dl >
+  <dt>Step1</dt>
+  <dd>- Select the language of your code.</dd>
+  <dt>Step2</dt>
+  <dd>- Write or paste code.</dd>
+  <dt>Step3</dt>
+  <dd>- Enter your input for which you want to see output.</dd>
+  <dt>Step4</dt>
+  <dd>- Click the submit button to compile and run your code.</dd>
+  <dd>- See the output of the sample input.</dd>
+</dl>
+</div>
+
 <br><br>
 <div class="container-fluid row cspace2 slideanim">
 <div class="col-sm-7">
 <div class="form-group" >
 <form style="padding-left:50px" action="compile.php" name="f2" method="POST">
-<label for="lang">Choose Language</label>
+<label for="lang">Choose language</label>
 
 <select class="form-control" name="language" >
 <option value="c">C</option>
@@ -73,9 +123,9 @@ require_once("header.php");
 
 </select><br><br>
 
-<label for="ta">Write Your Code</label>
+<label for="ta">Write your code</label>
 <textarea class="form-control" name="code" rows="10" cols="50"></textarea><br><br>
-<label for="in">Enter Your Input</label>
+<label for="in">Enter your input</label>
 <textarea class="form-control" name="input" rows="10" cols="50"></textarea><br><br>
 <input type="submit" class="btn btn-success" value="Run Code"><br><br><br>
 
@@ -91,6 +141,7 @@ require_once("header.php");
 </div>
 
 <div class="col-sm-5" style="padding-left:100px">
+
     <br><br><br><div style="font-weight: bold; Color: #580A42;" class="pb">Recent And Upcoming Contest</div><br>
 
 <?php
@@ -167,15 +218,15 @@ $q3="SELECT * FROM rapl_oj_contest ORDER BY date_on DESC LIMIT 0,2";
      
         if($row['date_on']==$d && $seconds>=0 && $ss>=0 )
         {
-             echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px; class=\"xmm\">Lab Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab Date: $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br> Status: <b>Running</b> <br><br>Time Remaining:  $h hour $mt miniute $scnd second <br><br></div><br>");
+             echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px; class=\"xmm\">Contest: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Date: $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br> Status: <b>Running</b> <br><br>Time Remaining:  $h hour $mt miniute $scnd second <br><br></div><br>");
          }
          else if($d>$row['date_on'] || ($d==$row['date_on'] && $t>$en))
          {
-            echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px; class=\"xmm\">Lab Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Finished</b><br><br></div><br>");
+            echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px; class=\"xmm\">Contest: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Finished</b><br><br></div><br>");
          }
          else
          {
-            echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px; class=\"xmm\">Lab Name: $row[cname]<br><br>Lab Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Not Started Yet</b><br><br></div><br>");
+            echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px; class=\"xmm\">Contest: $row[cname]<br><br>Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Not Started Yet</b><br><br></div><br>");
          }
     }
 
@@ -193,6 +244,25 @@ require_once("footer.php");
 ?>
 
 </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
 </body>
 </html>
 

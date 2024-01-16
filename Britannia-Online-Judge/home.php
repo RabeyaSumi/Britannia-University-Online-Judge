@@ -54,7 +54,7 @@ require_once("header.php");
 <div class="col-sm-7">
 
 <div id="services"  class="container-fluid ">
-  <h3 class="lead" style="color:Black; margin-left:220px;  ">SERVICES</h3>
+  <h2 style="font-weight: bold; margin-left:220px;  ">SERVICES</h2>
   <h4 class="lead" style="color:green; margin-left:220px; font-family:'Comic Sans MS'">We empact for</h4>
   
   <div class="container-fluid text-center">
@@ -63,7 +63,7 @@ require_once("header.php");
     <div class="col-sm-6" style="background-color:lightblue; box-shadow: 0px 10px 5px #888, 0px -10px 5px white; height:130px">
       <a href="compiler.php"><span class="fa fa-code logo-small" style="font-size: 30px;"></span>
       <h4>Compiler</h4>
-      <p>Our Website Provide Compiler to Compile and see Output</p>
+      <p>Our website provide compiler for compiling and showing output of a solution's code.</p>
       </a>
     </div>
   </div>
@@ -72,23 +72,23 @@ require_once("header.php");
     <div class="col-sm-6" style="background-color:lightblue; box-shadow: 0px 10px 5px #888, 3px -1px 10px rgb(27, 51, 71); margin-left:50px; height:130px">
        <a href="archive.php"><span class="fa fa-archive logo-small" style="font-size: 30px;"></span>
       <h4>Problem Archive</h4>
-      <p>Researching Our Surrounding We Set and Provide Problems</p>
+      <p>We provide appropriete problems according to our student preparences.</p>
       </a>
     </div>
   </div>
   <div>   
     <div class="col-sm-6" style="background-color:lightblue; box-shadow: 0px 10px 5px #888, 3px -1px 7px rgb(27, 51, 71);  margin-left:100px; height:130px ">
        <a href="contest.php"><span class="fa fa-cogs" style="font-size: 30px;"></span>
-      <h4>Lab Contest</h4>
-      <p>Our Online Judge Can Arrange a Lab Contest</p>
+      <h4>Contest</h4>
+      <p>Our online judge can arrange a lab contest.</p>
       </a>
     </div>
   </div>
   <div>
     <div class="col-sm-6" style="background-color:lightblue; box-shadow: 0px 10px 5px white, 3px -1px 7px rgb(27, 51, 71); margin-left:150px; height:130px ">
        <a href="management.php" ><span class="fa fa-check-square logo-small" style="font-size: 30px;"></span>
-      <h4>Know Us</h4>
-      <p>A Beautiful Authority Of Management</p>
+      <h4>About Us</h4>
+      <p>We have abeatiful authority to set problem and overall management.</p>
       </a>
     </div>
   </div>
@@ -100,7 +100,7 @@ require_once("header.php");
 </div><br><br><br>
 
 <div class="col-sm-5" style="padding-left:100px">
-    <div style="font-weight: bold; Color: #580A42;" class="pb">Recent And Upcoming Contest</div><br>
+    <h4 style="font-weight: bold; Color: #580A42;" class="pb">Recent And Upcoming Contest</h4><br>
 
 <?php
 
@@ -181,15 +181,15 @@ $q3="SELECT * FROM rapl_oj_contest ORDER BY date_on DESC LIMIT 0,2";
       /*echo(" <a href=\"save.php?name=$row[table_name]\">$row[table_name]</a><br><br>");*/
         if($row['date_on']==$d && $seconds>=0 && $ss>=0 )
         {
-             echo("<div style=\"border:1px solid gray; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px;  class=\"xmm\">Lab Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab Date: $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br> Status: <b>Running</b> <br><br>Time Remaining:  $h hour $mt miniute $scnd second <br><br></div><br>");
+             echo("<div style=\"box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px;  class=\"xmm\">Contest: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Date: $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br> Status: <b>Running</b> <br><br>Time Remaining:  $h hour $mt miniute $scnd second <br><br></div><br>");
          }
          else if($d>$row['date_on'] || ($d==$row['date_on'] && $t>$en))
          {
-            echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px;  class=\"xmm\">Lab Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Finished</b><br><br></div><br>");
+            echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px;\"  class=\"xmm\">Contest: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Finished</b><br><br></div><br>");
          }
          else
          {
-            echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px;  class=\"xmm\">Lab Name: $row[cname]<br><br>Lab Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Not Started Yet</b><br><br></div><br>");
+            echo("<div style=\"box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px;  class=\"xmm\">Lab Contest: $row[cname]<br><br>Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Not Started Yet</b><br><br></div><br>");
          }
     }
 

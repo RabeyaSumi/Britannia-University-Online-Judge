@@ -7,6 +7,7 @@
 .main-content{
     height: 800px;
     width: 100%;
+    background-color: #A0D2EB;
 }
 
 
@@ -40,19 +41,18 @@
 .menurow {
     list-style-type: none;
     margin: 0;
+    font-family:Verdana !important; 
     overflow: hidden;
-    background-color: #395869;
-    padding-top: 10px;
+    background-color: rgb(40, 63, 81); 
     border-bottom: 1px solid pink;
  }
 
   ul {
-    padding:16px;
+    /* padding:16px; */
     list-style-type: none;
     margin: 0;
     overflow: hidden;
     padding-top: 25px;
-    padding-bottom: 0px;
   }
 
   li {
@@ -63,12 +63,16 @@
   }
 
   li a {
-    color: rgb(133, 2, 87);
+    font-family:Verdana !important; 
     display:block
     text-align: center;
-    padding: 14px 16px;
-    padding-bottom: 1px;
+    padding-top: 14px;
+    padding-bottom: 0px;
     text-decoration: bold;
+  }
+
+  .font{
+    font-family:Verdana !important; 
   }
 
 
@@ -128,4 +132,43 @@
     }
 
 
+ 
 
+
+
+
+    #message {
+        display:none;
+        background: #f1f1f1;
+        color: #000;
+        position: relative;
+        padding: 20px;
+        margin-top: 10px;
+      }
+      
+      #message p {
+        padding: 10px 35px;
+        font-size: 18px;
+      }
+      
+      /* Add a green text color and a checkmark when the requirements are right */
+      .valid {
+        color: green;
+      }
+      
+      .valid:before {
+        position: relative;
+        left: -35px;
+        content: "&#10004;";
+      }
+      
+      /* Add a red text color and an "x" icon when the requirements are wrong */
+      .invalid {
+        color: red;
+      }
+      
+      .invalid:before {
+        position: relative;
+        left: -35px;
+        content: "&#10006;";
+      }

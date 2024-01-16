@@ -52,7 +52,7 @@ include("header.php");
 <div class="main-content">
 <div class="row log">
 <div class="col-sm-10">
-<br><br><div class=""><h3 style="text-align:center;">Standings</h3></div>
+<br><br><div class=""><h2 style="text-align:center; font-weight:bold; padding-left: 50px">STANDING</h2></div>
 </div>
 
 <div class="col-sm-1">

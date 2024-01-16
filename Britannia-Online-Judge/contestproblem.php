@@ -26,7 +26,7 @@ if(isset($_SESSION['un']))
     
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Archive</title>
+        <title>Contest Problems</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -48,7 +48,7 @@ include("header.php");
 <div class="main-content">
 <div class="row log">
 <div class="col-sm-10">
-<br><br><div class=""><h3 style="text-align:left; padding-left:227px">Given Problems</h3></div><br>
+<br><br><div class=""><h3 style="text-align:left; FONT-WEIGHT:BOLD; padding-left:227px">GIVEN PROBLEMS</h3></div><br>
 </div>
 
 <div class="col-sm-1">
@@ -213,7 +213,7 @@ if(isset($_GET['name']))
          }
          else if($d>$row['date_on'] || ($d==$row['date_on'] && $t>$en))
          {
-            echo("<div style=\"border:1px solid gray;padding:10px;border-radius:5px;\">Lab  Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab  Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Finished</b><br><br></div>");
+            echo("<div style=\"border:1px solid white; box-shadow: 2px 2px 2px 2px lightblue; padding:10px;border-radius:5px; margin-right:10px; >Lab  Name: <a href=\"contestproblem.php?name=$row[cname]\">$row[cname]</a><br><br>Lab  Date:  $row[date_on] <br><br>Start Time: $row[start_at]<br><br>End Time: $row[end_at] <br><br>Status: <b>Finished</b><br><br></div>");
          }
          else
          {

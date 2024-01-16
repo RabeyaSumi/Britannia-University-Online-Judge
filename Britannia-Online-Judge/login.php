@@ -38,7 +38,7 @@ if(isset($_SESSION["un"]))
 
 
 </head>
-<body >
+<body style="background-color: #A0D2EB">
 
 <?php
 

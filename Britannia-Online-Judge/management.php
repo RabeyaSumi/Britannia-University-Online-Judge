@@ -59,48 +59,48 @@ require_once("config.php");
 ?>
 
     <div class="row space-between">
-        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; margin:20px">
-           <div style="text-center; height:200px; box shadow: 0.3em 0.3em 1em lightblue;" class="pic align-items-center">
+        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; background-color:white; margin:20px">
+           <div style="text-center; height:200px; box shadow: 0.3em 0.3em 1em lightblue; font-weight:bold" class="pic align-items-center">
               IMG
            </div>
            <div class="meet" style="background-color: green">
              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore voluptate eligendi! Eaque, distinctio enim.</p>
              </div>
         </div>
-        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; margin:20px">
-           <div style="text-center; height:200px; 0.3em 0.3em 1em lightblue;" class="pic align-items-center">
+        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; background-color:white; margin:20px">
+           <div style="text-center; height:200px; 0.3em 0.3em 1em lightblue; font-weight:bold" class="pic align-items-center">
               IMG
            </div>
            <div class="meet" style="background-color: green">
              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore voluptate eligendi! Eaque, distinctio enim.</p>
              </div>
         </div>
-        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; margin:20px">
-           <div style="text-center; height:200px;  box shadow: 0.3em 0.3em 1em lightblue;" class="pic align-items-center">
+        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; background-color:white; margin:20px">
+           <div style="text-center; height:200px;  box shadow: 0.3em 0.3em 1em lightblue; font-weight:bold" class="pic align-items-center">
               IMG
            </div>
            <div class="meet" style="background-color: green">
              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore voluptate eligendi! Eaque, distinctio enim.</p>
              </div>
         </div>
-        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; margin:20px">
-           <div style="text-center; height:200px;  box shadow: 0.3em 0.3em 1em lightblue;" class="pic align-items-center">
+        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; background-color:white; margin:20px">
+           <div style="text-center; height:200px;  box shadow: 0.3em 0.3em 1em lightblue; font-weight:bold" class="pic align-items-center">
               IMG
            </div>
            <div class="meet" style="background-color: green">
              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore voluptate eligendi! Eaque, distinctio enim.</p>
              </div>
         </div>
-        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; margin:20px">
-           <div style="text-center; height:200px; shadow: 0.3em 0.3em 1em lightblue;" class="pic align-items-center">
+        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; background-color:white; margin:20px">
+           <div style="text-center; height:200px; shadow: 0.3em 0.3em 1em lightblue; font-weight:bold" class="pic align-items-center">
               IMG
            </div>
            <div class="meet" style="background-color: green">
              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore voluptate eligendi! Eaque, distinctio enim.</p>
              </div>
         </div>
-        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; margin:20px">
-           <div style="text-center; height:200px; box shadow: 0.3em 0.3em 1em lightblue;" class="pic align-items-center">
+        <div class="col-sm-3" style="box-shadow: 5px 5px 5px 5px lightblue; background-color:white; margin:20px">
+           <div style="text-center; height:200px; box shadow: 0.3em 0.3em 1em lightblue; font-weight:bold" class="pic align-items-center">
               IMG
            </div>
            <div class="meet" style="background-color: green">

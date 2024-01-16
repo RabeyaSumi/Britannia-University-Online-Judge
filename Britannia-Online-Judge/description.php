@@ -46,7 +46,7 @@ require_once("header.php");
 
 ?>
 
-<div class="main-content" style="margin-left:200px; height:900px" ><br><br>
+<div class="main-content" style="margin-left:100px; height:1000px" ><br><br>
 <?php
 
 require_once("config.php");
@@ -93,7 +93,7 @@ echo "
 echo "
 
 <div class=\"row cspace\">
-<div class=\"col-sm-10\">
+<div style=\"color: #580A42; font-size: 20px\" class=\"col-sm-10\">
 <b>Problem Description</b><br><br><textarea class=\"form-control\" rows=\"33\" cols=\"100\" readonly>$row[pbdes]</textarea><br>";
 
 echo "<a class=\"btn btn-success\" href=\"submit.php?id=$row[id]\">Submit Your Code</a></div>";

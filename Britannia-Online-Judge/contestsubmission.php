@@ -26,7 +26,7 @@ if(isset($_SESSION['un']))
     
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>All Submission</title>
+        <title>Contest Submission</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -51,7 +51,7 @@ include("header.php");
 <div class="main-content">
 <div class="row log">
 <div class="col-sm-10">
-<br><br><div class=""><h3 style="text-align:center; color:#A71F8B">All Submission</h3></div>
+<br><div class=""><h2 style="text-align:center; font-weight:bold; padding-left: 50px">SUBMISSION</h2></div>
 </div>
 
 <div class="col-sm-1">

@@ -23,7 +23,7 @@
 
 
 
-<div class="footer" style="padding: 20px;">
+<div class="footer" style="padding: 20px; padding-bottom: 10px">
 <div class="">
 <div class="row">
 
@@ -38,8 +38,8 @@ echo"<b>Server Time:  $t</b>";
 
 <div class="col-sm-5">
 <div class="">
-<b>Beta Version-2023</b><br>
-<b>sumii.rab@gmail.com</b>
+<center><b>All Right Reserved by Rabeya Akter</b><br>
+<b>Email: sumii.rab@gmail.com</b></center>
 </div>
 </div>
 

@@ -51,7 +51,47 @@ $row=mysqli_fetch_array($sq);
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+              .main-content{
+                  height: 100%;
+                  width: 100%;
+              }
+              .accordion {
+              background-color: #eee;
+              color: green;
+              cursor: pointer;
+              font-weight: bold;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
 
+            
+
+            .accordion:after {
+              content: '\002B';
+              color: #777;
+              font-weight: bold;
+              float: right;
+              margin-left: 5px;
+            }
+
+            .active:after {
+              content: "\2212";
+            }
+
+            .panel {
+              padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            }
+        </style>
 
 
 
@@ -66,11 +106,25 @@ $row=mysqli_fetch_array($sq);
 include("header.php");
 
 ?>
-
+<button class="accordion">Click to see the instructions to submit code.</button>
+<div class="panel" style="padding-left:100px; background-color:lavender">
+<dl>
+  <dt>Step1</dt>
+  <dd>- Select the language of your code.</dd>
+  <dt>Step2</dt>
+  <dd>- Write or paste code.</dd>
+  <dt>Step3</dt>
+  <dd>- Click 'Run Code' button to compile and run code.</dd>
+  <dt>Step4</dt>
+  <dd>- Come to another page, click on 'Submit Code' button to finally submit it to the online judge submission queue.</dd>
+  <dd>-Come to another page. See the verdict of the solution.</dd>
+</dl>
+</div>
 <div class="main-content" style="padding-left:100px">
+
 <div class="row log">
 <div class="col-sm-10">
-<br><br><div class=""><h3 style="text-align:center;">Submit Code</h3></div>
+<br><div class=""><h2 style="text-align:center;">Submit Code</h2></div>
 </div>
 
 <div class="col-sm-1">
@@ -101,7 +155,7 @@ include("header.php");
 </select><br><br>
 
 <?php
-
+    
     if($c==1)
     {
        //echo "<input type=\"hidden\" name=\"pbn\" value=\"$problem\">";
@@ -119,7 +173,7 @@ include("header.php");
 <label for="ta">Write Your Code</label>
 <textarea class="form-control" name="code" rows="10" cols="50"></textarea><br><br>
 <input type="hidden" name='pbn' value="<?php echo $row['pbname']; ?>">
-<input type="submit" class="btn btn-success" value="Compile Code"><br><br><br>
+<input type="submit" class="btn btn-success" value="Run Code"><br><br><br>
 
 
 </form>
@@ -141,6 +195,22 @@ include("footer.php");
 ?>
 
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 
 
